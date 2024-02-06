@@ -1,0 +1,56 @@
+REQUEST = login;
+URL = http://localhost:3000/
+METHOD = post
+
+SEND = 
+{
+    "module": "user",
+    "request": "login"
+    "data": 
+        {
+            "username": "medicalAPI",
+            "password": "admin"
+        }
+}
+
+RESPONSE = {
+    "success": true,
+    "data": [
+        {
+            "Id": 1,
+            "Email": "jayfuego052620gmail.com",
+            "Name": "Jay Fuego",
+            "Password": "3d40c9058c9cc685bbbaff94489421f1e530d6cb93c9b4050d684b1a51b194c85e49843721259c139af77a466c501a29f670670ca4e4cb7f51cfbe62c9f18d5f",
+            "Phone": "09667004308",
+            "Gender": null,
+            "Height": null,
+            "Weight": null,
+            "Age": null
+        }
+    ]
+}
+
+/===============================================================================================================================================================================================//
+
+REQUEST = createuser
+URL = http://localhost:3000/
+METHOD = post
+
+SEND = 
+{
+    "module": "user",
+    "request": "login",
+    "data": {
+        "username": "jayfuego052620gmail.com",
+        "name": "Jay Fuego",
+        "password": "Jayfuego",
+        "phone": "09667004308"
+    }
+}
+
+RESPONSE = 
+{
+    "success": true
+}
+
+/===============================================================================================================================================================================================//
