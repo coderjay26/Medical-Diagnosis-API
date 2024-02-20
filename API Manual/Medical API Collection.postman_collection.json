@@ -1,0 +1,212 @@
+{
+	"info": {
+		"_postman_id": "e145e325-392f-43a8-859e-be5926ed3d3a",
+		"name": "Medical API Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Medical API",
+			"item": [
+				{
+					"name": "UserRequest",
+					"item": [
+						{
+							"name": "login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "\r\n{\r\n    \"module\": \"user\",\r\n    \"request\": \"login\",\r\n    \"data\": {\r\n        \"username\": \"jayfuego9@gmail.com\",\r\n        \"password\": \"Jayfuego\"\r\n    }\r\n}\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://192.168.254.148:8000/",
+									"protocol": "http",
+									"host": [
+										"192",
+										"168",
+										"254",
+										"148"
+									],
+									"port": "8000",
+									"path": [
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "createuser",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"module\": \"user\",\r\n    \"request\": \"createuser\",\r\n    \"data\": {\r\n        \"username\": \"jayfuego9gmail.com\",\r\n        \"name\": \"Jay Fueego\",\r\n        \"password\": \"Jayfuego\",\r\n        \"phone\": \"09667004308\"\r\n    }\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://192.168.254.148:8000/",
+									"protocol": "http",
+									"host": [
+										"192",
+										"168",
+										"254",
+										"148"
+									],
+									"port": "8000",
+									"path": [
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getusers",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "\r\n{\r\n    \"module\": \"user\",\r\n    \"request\": \"getusers\",\r\n    \"data\": {\r\n    }\r\n}\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://192.168.254.148:8000/",
+									"protocol": "http",
+									"host": [
+										"192",
+										"168",
+										"254",
+										"148"
+									],
+									"port": "8000",
+									"path": [
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PatientDataRequest",
+					"item": [
+						{
+							"name": "getpatient",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "\r\n{\r\n    \"module\": \"patient\",\r\n    \"request\": \"getpatient\",\r\n    \"data\": {\r\n        \"userid\": 1,\r\n        \"patientname\": \"Jonaly\"\r\n    }\r\n}\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://192.168.254.148:8000/",
+									"protocol": "http",
+									"host": [
+										"192",
+										"168",
+										"254",
+										"148"
+									],
+									"port": "8000",
+									"path": [
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getpatients",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "\r\n{\r\n    \"module\": \"patient\",\r\n    \"request\": \"getpatients\",\r\n    \"data\": {\r\n        \"userid\": 1\r\n    }\r\n}\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://192.168.254.148:8000/",
+									"protocol": "http",
+									"host": [
+										"192",
+										"168",
+										"254",
+										"148"
+									],
+									"port": "8000",
+									"path": [
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "MedicalDiagnose",
+					"item": [
+						{
+							"name": "getRecommendation",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "\r\n{\r\n    \"module\": \"diagnose\",\r\n    \"request\": \"diagnose\",\r\n    \"data\": {\r\n        \"category\": \"Respiratory\",\r\n        \"symptoms\": [\r\n            \"vomiting\", \"diarrhea\", \"abdominal pain\"\r\n        ]\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/index.php",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"index.php"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
