@@ -1,8 +1,9 @@
 {
 	"info": {
-		"_postman_id": "e145e325-392f-43a8-859e-be5926ed3d3a",
+		"_postman_id": "bd0a43f9-b0ea-4d51-b266-40850b0cfcc9",
 		"name": "Medical API Collection",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21993122"
 	},
 	"item": [
 		{
@@ -183,7 +184,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "\r\n{\r\n    \"module\": \"diagnose\",\r\n    \"request\": \"diagnose\",\r\n    \"data\": {\r\n        \"category\": \"Respiratory\",\r\n        \"symptoms\": [\r\n            \"vomiting\", \"diarrhea\", \"abdominal pain\"\r\n        ]\r\n    }\r\n}",
+									"raw": "\r\n{\r\n    \"module\": \"diagnose\",\r\n    \"request\": \"category\",\r\n    \"data\": {\r\n        \"category\": \"Respiratory\"\r\n    }\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -191,14 +192,14 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:3000/index.php",
+									"raw": "http://localhost:3000/",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
 									"port": "3000",
 									"path": [
-										"index.php"
+										""
 									]
 								}
 							},
