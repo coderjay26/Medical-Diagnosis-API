@@ -33,7 +33,9 @@ class PatientModel
     }
 
     public static function createpatient(array $patientData)
-    {
+    {  
 
     }
 }
+
+

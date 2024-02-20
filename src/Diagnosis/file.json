@@ -1,0 +1,55 @@
+{
+    "Respiratory": [
+      {
+        "condition": ["runny nose", "cough", "sneezing"],
+        "recommendation": "Keep your child hydrated, use a humidifier, and provide over-the-counter cold medications as needed."
+      },
+      {
+        "condition": ["fever"],
+        "recommendation": "Monitor your child's temperature, offer plenty of fluids, and administer appropriate fever-reducing medication such as acetaminophen or ibuprofen."
+      },
+      {
+        "condition": ["ear pain", "fever"],
+        "recommendation": "Consult a pediatrician for evaluation and treatment, which may include antibiotics for bacterial infections and pain management."
+      },
+      {
+        "condition": ["wheezing", "shortness of breath", "coughing"],
+        "recommendation": "Administer rescue inhaler (e.g., albuterol), seek medical attention if symptoms worsen, and follow an asthma action plan."
+      }
+    ],
+    "Gastrointestinal": [
+      {
+        "condition": ["vomiting", "diarrhea", "abdominal pain"],
+        "recommendation": "Ensure adequate hydration with oral rehydration solutions, offer bland foods, and monitor for signs of dehydration."
+      },
+      {
+        "condition": ["infrequent or hard stools", "abdominal discomfort"],
+        "recommendation": "Increase fiber intake with fruits, vegetables, and whole grains, encourage physical activity, and consider stool softeners if necessary."
+      }
+    ],
+    "Allergic": [
+      {
+        "condition": ["itchy or watery eyes", "sneezing", "nasal congestion"],
+        "recommendation": "Minimize exposure to allergens, use over-the-counter antihistamines, and consider allergy testing if symptoms persist."
+      }
+    ],
+    "Dermatological": [
+      {
+        "condition": ["redness or irritation in diaper area"],
+        "recommendation": "Keep the diaper area clean and dry, use barrier creams or ointments, and provide frequent diaper changes."
+      }
+    ],
+    "Dental": [
+      {
+        "condition": ["irritability", "drooling", "swollen gums"],
+        "recommendation": "Offer teething toys or chilled teething rings for relief, gently massage the gums, and consider over-the-counter pain relievers as directed by a pediatrician."
+      }
+    ],
+    "Infectious": [
+      {
+        "condition": ["fever", "sores in mouth", "rash on hands and feet"],
+        "recommendation": "Provide supportive care with fluids and pain relief, encourage good hand hygiene, and isolate the child to prevent spreading the virus."
+      }
+    ]
+  }
+  

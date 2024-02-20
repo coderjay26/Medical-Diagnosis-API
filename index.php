@@ -18,6 +18,9 @@ use User\UserController;
 use User\UserModel;
 use Patient\PatientModel;
 use Patient\PatientController;
+use Diagnosis\ExpertSystemController;
+use Diagnosis\ExpertSystemModel;
+use Diagnosis\DiagnosisModel;
 
 
 //Set the content-type to application/json
@@ -53,6 +56,11 @@ if($method === 'post' && $requestModule !== null && $requestProcess != null)
         case 'patient':
             $model = new PatientModel();
             $controller = new PatientController($model, $requestData);
+            break;
+        case 'diagnose':
+            $model = new ExpertSystemModel();
+            // Create an instance of ExpertSystemController with the model and user input
+            $controller = new ExpertSystemController($model,$requestData);
             break;
         default:
         http_response_code(405);

@@ -1,0 +1,42 @@
+[
+  {
+    "condition": ["runny nose", "cough", "sneezing"],
+    "recommendation": "Keep your child hydrated, use a humidifier, and provide over-the-counter cold medications such as antihistamines (e.g., loratadine), decongestants (e.g., pseudoephedrine), and cough suppressants (e.g., dextromethorphan) as needed."
+  },
+  {
+    "condition": ["fever"],
+    "recommendation": "Monitor your child's temperature, offer plenty of fluids, and administer appropriate fever-reducing medication such as acetaminophen (e.g., Tylenol) or ibuprofen (e.g., Advil) according to the recommended dosage."
+  },
+  {
+    "condition": ["ear pain", "fever"],
+    "recommendation": "Consult a pediatrician for evaluation and treatment, which may include antibiotics (e.g., amoxicillin) for bacterial infections and pain management with analgesics (e.g., ibuprofen) or ear drops containing numbing agents (e.g., benzocaine)."
+  },
+  {
+    "condition": ["vomiting", "diarrhea", "abdominal pain"],
+    "recommendation": "Ensure adequate hydration with oral rehydration solutions such as Pedialyte, offer bland foods like rice, bananas, and toast, and monitor for signs of dehydration. Antiemetic medications (e.g., ondansetron) may be prescribed for severe vomiting."
+  },
+  {
+    "condition": ["itchy or watery eyes", "sneezing", "nasal congestion"],
+    "recommendation": "Minimize exposure to allergens, use over-the-counter antihistamines (e.g., cetirizine), decongestants (e.g., oxymetazoline), and nasal corticosteroids (e.g., fluticasone) for symptom relief. Consider allergy testing if symptoms persist for targeted treatment."
+  },
+  {
+    "condition": ["wheezing", "shortness of breath", "coughing"],
+    "recommendation": "Administer rescue inhaler containing short-acting beta agonists (e.g., albuterol) for acute symptoms, seek medical attention if symptoms worsen or persist, and follow an asthma action plan provided by a healthcare professional."
+  },
+  {
+    "condition": ["infrequent or hard stools", "abdominal discomfort"],
+    "recommendation": "Increase fiber intake with fruits, vegetables, and whole grains, encourage physical activity, and consider stool softeners (e.g., docusate sodium) or osmotic laxatives (e.g., polyethylene glycol) if necessary."
+  },
+  {
+    "condition": ["redness or irritation in diaper area"],
+    "recommendation": "Keep the diaper area clean and dry, use barrier creams or ointments containing zinc oxide or petrolatum, and provide frequent diaper changes to prevent irritation. Consult a pediatrician for persistent rash or signs of infection."
+  },
+  {
+    "condition": ["irritability", "drooling", "swollen gums"],
+    "recommendation": "Offer teething toys or chilled teething rings for relief, gently massage the gums with clean fingers, and consider over-the-counter pain relievers such as infant acetaminophen (e.g., Tylenol) or ibuprofen (e.g., Advil) as directed by a pediatrician."
+  },
+  {
+    "condition": ["fever", "sores in mouth", "rash on hands and feet"],
+    "recommendation": "Provide supportive care with fluids and pain relief using acetaminophen or ibuprofen, encourage good hand hygiene to prevent spreading the virus, and consult a pediatrician for severe symptoms or complications."
+  }
+]
