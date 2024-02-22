@@ -1,6 +1,8 @@
 <?php
 namespace Diagnosis;
 use Diagnosis\DiagnosisModel;
+use Database\Database;
+use Configuration\Configuration;
 class ExpertSystemModel
 {
     private $diagnoses = [];
@@ -25,11 +27,34 @@ class ExpertSystemModel
     }
 
     public function diagnose($inputSymptoms) {
+        $inputSymptoms = json_encode($inputSymptoms['symptoms']);
+        //echo $inputSymptoms;
         foreach ($this->diagnoses as $diagnosis) {
             if ($diagnosis->matches($inputSymptoms)) {
-                return $diagnosis->recommendation;
+                echo $diagnosis->recommendation;
             }
         }
-        return "Diagnosis not found";
+        echo "Diagnosis not found";
+    }
+
+    public function symptoms($data)
+    {
+        $categoryParam = array($data['category']);
+        $result = Database::executeQuery(Configuration::$dbase, "Call getSymptoms(?)", $categoryParam);
+        
+        $result = json_decode($result);
+        
+        
+        if(!$result == [] || !$result == null)
+        {   
+            $symptomsArray = explode(", ", $result[0]->symptoms);
+            $result[0]->symptoms = $symptomsArray;
+            http_response_code(200);
+            echo json_encode(array("success" => true, "data" => $result));
+        }else
+        {
+            http_response_code(401);
+            echo json_encode(["error" => "Category not Found"]);
+        }
     }
 }
