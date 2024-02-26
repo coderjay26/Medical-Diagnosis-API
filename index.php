@@ -16,8 +16,6 @@ spl_autoload_register(function ($class) {
 
 use User\UserController;
 use User\UserModel;
-use Patient\PatientModel;
-use Patient\PatientController;
 use Diagnosis\ExpertSystemController;
 use Diagnosis\ExpertSystemModel;
 use Diagnosis\DiagnosisModel;
@@ -52,10 +50,6 @@ if($method === 'post' && $requestModule !== null && $requestProcess != null)
         case 'user':
             $model = new UserModel();
             $controller = new UserController($model, $requestData);
-            break;
-        case 'patient':
-            $model = new PatientModel();
-            $controller = new PatientController($model, $requestData);
             break;
         case 'diagnose':
             $model = new ExpertSystemModel();
